@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI HTML Answer Bot</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        input, button { padding: 10px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Ask Me About HTML!</h2>
+    <input type="text" id="question" placeholder="Type your question here...">
+    <button onclick="getAnswer()">Ask</button>
+    <p id="answer"></p>
+
+    <script>
+        function getAnswer() {
+            let question = document.getElementById("question").value;
+            fetch("http://localhost:8080/api/getAnswer?question=" + encodeURIComponent(question))
+                .then(response => response.text())
+                .then(data => document.getElementById("answer").innerText = data)
+                .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+</html>
