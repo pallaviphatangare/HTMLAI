@@ -1,4 +1,3 @@
-/* Reset and full viewport settings */
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -8,14 +7,12 @@ html, body, #root {
   color: #e0e0e0;
 }
 
-/* Full screen container */
 .chat-page {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* Main chat container (full screen) */
 .chat-container {
   display: flex;
   flex-direction: column;
@@ -27,7 +24,6 @@ html, body, #root {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Header styling */
 .chat-header {
   padding: 20px;
   background: linear-gradient(135deg, #5563de, #74abe2);
@@ -41,7 +37,6 @@ html, body, #root {
   color: #ffffff;
 }
 
-/* Chat body (scrollable) */
 .chat-body {
   flex: 1;
   padding: 20px;
@@ -49,7 +44,6 @@ html, body, #root {
   background: #121212;
 }
 
-/* Placeholder for no messages */
 .chat-placeholder {
   text-align: center;
   color: #888;
@@ -57,7 +51,6 @@ html, body, #root {
   font-size: 1.1rem;
 }
 
-/* Chat bubble common styles */
 .chat-bubble {
   max-width: 75%;
   margin-bottom: 15px;
@@ -68,7 +61,6 @@ html, body, #root {
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* User message bubble (right aligned) */
 .user-bubble {
   align-self: flex-end;
   background-color: #0070f3;
@@ -76,7 +68,6 @@ html, body, #root {
   border-bottom-right-radius: 4px;
 }
 
-/* AI message bubble (left aligned) */
 .ai-bubble {
   align-self: flex-start;
   background-color: #2a2a2a;
@@ -84,25 +75,23 @@ html, body, #root {
   border-bottom-left-radius: 4px;
 }
 
-/* Loading indicator */
 .chat-loading {
   text-align: center;
   font-style: italic;
   margin-top: 10px;
   color: #aaa;
 }
-/* Footer container with relative positioning */
+
 .chat-footer {
     position: relative;
     padding: 15px;
     background-color: #272727;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
-  /* Full width input with extra right padding for the send button */
+ 
   .chat-footer input {
     width: 100%;
-    padding: 12px 60px 12px 15px; /* extra padding on right for button */
+    padding: 12px 60px 12px 15px;
     border: none;
     border-radius: 25px;
     outline: none;
@@ -121,7 +110,6 @@ html, body, #root {
     box-shadow: 0 0 10px rgba(0, 112, 243, 0.5);
   }
   
-  /* Send button positioned inside the input field container */
   .chat-footer button {
     position: absolute;
     right: 25px;

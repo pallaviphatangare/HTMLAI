@@ -1,4 +1,4 @@
-package html.aicreator.entity;
+package ai.creator.entity;
 
 
 import jakarta.persistence.*;

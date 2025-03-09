@@ -1,8 +1,8 @@
-package html.aicreator.controller;
+package ai.creator.controller;
 
 import org.springframework.web.bind.annotation.*;
 
-import html.aicreator.services.AIService;
+import ai.creator.services.AIService;
 
 @RestController
 @RequestMapping("/api")

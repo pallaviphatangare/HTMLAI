@@ -4,14 +4,12 @@ import "./Chat.css";
 
 const Chat = () => {
   const [question, setQuestion] = useState("");
-  const [chatHistory, setChatHistory] = useState([]); // Array of { sender: "user" | "ai", message: string }
+  const [chatHistory, setChatHistory] = useState([]);
   const [loading, setLoading] = useState(false);
   const chatBodyRef = useRef(null);
 
   const handleAsk = async () => {
     if (!question.trim()) return;
-
-    // Add user message to history
     const userMessage = { sender: "user", message: question };
     setChatHistory((prev) => [...prev, userMessage]);
     setQuestion("");
@@ -30,7 +28,6 @@ const Chat = () => {
     setLoading(false);
   };
 
-  // Scroll to the bottom when chatHistory updates
   useEffect(() => {
     if (chatBodyRef.current) {
       chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
@@ -41,7 +38,7 @@ const Chat = () => {
     <div className="chat-page">
       <div className="chat-container">
         <header className="chat-header">
-          <h1>ChatGPT Clone</h1>
+          <h1>HTML AI</h1>
         </header>
         <main className="chat-body" ref={chatBodyRef}>
           {chatHistory.length === 0 && (

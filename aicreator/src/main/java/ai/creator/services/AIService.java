@@ -1,4 +1,4 @@
-package html.aicreator.services;
+package ai.creator.services;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
